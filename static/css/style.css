@@ -1,0 +1,14 @@
+body, html {
+    font-family: 'Lato', sans-serif;
+    height:100%;
+    width:100%;
+    margin:0;
+    text-align:center;
+    opacity:0.8;
+}
+
+ul {
+    list-style-type: none;
+    margin-left:30%;
+    margin-right:30%;
+}

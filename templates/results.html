@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Results</title>
+        <meta http-equiv="refresh" content="60"/>
+        <link rel="stylesheet" type="text/css" href="localhackday/hackfu/static/css/style.css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css">
+        <script src="localhackday/hackfu/static/js/jquery.js"></script>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="localhackday/hackfu/static/js/trianglify.js"></script>
+        <script src="localhackday/hackfu/static/js/main.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+    </head>
+    <body>
+        <h1>#LocalHackDay Tweets!</h1>
+        <!--p><a href="javascript:void();"id="refresh">Refresh tweets</a></p-->
+        <ul>
+        {% for x in api_data %}
+            <li>
+                <p>{{ x.text }}</p>
+                <br>
+            </li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
